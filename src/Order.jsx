@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export const Order = (props) => {
     const [stateOder, setStateOrder] = useState(props.data)
     
-    const handleClick = (item, index) => {
+    const handleClick = (item) => {
         let removeFormOrder = [] 
         stateOder.map(el => {
             if(el !== item)
@@ -23,7 +23,7 @@ export const Order = (props) => {
                 {
                     stateOder.map((item, index) => {
                         return(
-                            <li key={index} onClick={() => handleClick(item, index)} >{item}</li>
+                            <li className="cursor-pointer" key={index} onClick={() => handleClick(item)} >{item}</li>
                         )
                     })
                 }
