@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+span.active {
+  color: red
+}
+.line{
+  border-top: 1px solid black;
+  margin: 20px 0;
+}
