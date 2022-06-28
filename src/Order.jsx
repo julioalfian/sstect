@@ -8,6 +8,7 @@ export const Order = (props) => {
         stateOder.map(el => {
             if(el !== item)
                 return removeFormOrder.push(el)
+            return false
         })
         let newOrder = [
             ...item,
